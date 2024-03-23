@@ -7,7 +7,7 @@ $allowed_password = "testpass";
 
 // check login or not
 if(isset($_SESSION['username']) && $_SESSION['username'] === $allowed_username) {
-    // Yetkilendirilmiş kullanıcı, JSON verisini alabilir
+    // authorized user can retrieve JSON data
     header("Content-Type: application/json; charset=UTF-8");
 
     // create JSON data
